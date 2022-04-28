@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forma Domaci</title>
+    <link rel="stylesheet" href="theme/css/register.css">
+</head>
+
+<body>
+
+    <main>
+        <form action="register.php" method="get" id="myForm">
+            <fieldset>
+                <legend class="legend">Register Form</legend>
+                <label class="labels" for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter name"><br>
+                <label class="labels" for="lname">Surname:</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter Last name"><br>
+                <span class="labels">Gender:</span>
+                <input type="radio" name="gender" id="male" value="Male"><label class="labels check-boxes-radio" for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female"><label class="labels check-boxes-radio" for="female">Female</label><br>
+                <label class="labels" for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter E-mail"><br>
+                <label class="labels" for="pass">Password:</label>
+                <input type="password" name="pass" id="pass" placeholder="Type password"><br>
+                <label class="labels" for="repass">Re-type Password:</label>
+                <input type="password" name="repass" id="repass" placeholder="Double check password "><br>
+                <span class="labels">Choose Cours(es):</span>
+                <input type="checkbox" name="courses[]" id="html-course" value="Html"><label class="labels check-boxes-radio" for="html-course">Html</label>
+                <input type="checkbox" name="courses[]" id="css-course" value="Css"><label class="labels check-boxes-radio" for="css-course">Css</label>
+                <input type="checkbox" name="courses[]" id="js-course" value="JavaScript"><label class="labels check-boxes-radio" for="js-course">JavaScript</label><br>
+                <label class="labels" for="file">Choose Photo:</label>
+                <input type="file" name="file" id="file"><br>
+                <button class="button" type="submit" name="register">Register</button>
+                <button class="button" type="reset">Reset Data</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

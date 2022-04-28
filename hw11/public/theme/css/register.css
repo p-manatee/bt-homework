@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-header nav {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+#main-header nav ul li {
+    list-style: none;
+}
+
+#main-header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#main-header nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(29, 100, 147);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#myForm {
+    min-width: 500px;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+#myForm fieldset {
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+}
+
+.legend {
+    font-size: 25px;
+}
+
+.labels {
+    display: inline-block;
+    width: 300px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.check-boxes-radio {
+    width: auto;
+    margin-right: 20px;
+}
+
+.button {
+    padding: 10px;
+    background-color: rgb(174, 241, 243);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/*I wanted to select all inputs and give it a font-size dor this task*/
+
+input {
+    font-size: 18px;
+}
