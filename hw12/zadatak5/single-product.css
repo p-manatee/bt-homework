@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER  */
+
+header {
+    height: 100px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    padding: 10px;
+    background-color: yellowgreen;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* END HEADER */
+
+
+/* MAIN */
+
+.container {
+    width: 1200px;
+    margin: 80px auto;
+}
+
+.product-basic {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.product-basic .image {
+    width: 45%;
+    float: left;
+    margin-right: 2%;
+}
+
+.product-basic .image img {
+    width: 100%;
+}
+
+.product-basic .title {
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    width: 51%;
+}
+
+.action {
+    float: left;
+    text-align: center;
+    width: 51%;
+    font-size: 30px;
+}
+
+.action p {
+    margin: 50px 0;
+}
+
+.action button {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.description {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 8px;
+}
+
+.related-products {
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.related-product {
+    height: 100%;
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.related-product:last-child {
+    margin-right: 0;
+}
+
+.product-card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card .title {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: rgba(44, 61, 131, 0.803);
+}
+
+.product-card:hover .title {
+    background-color: rgb(44, 61, 131);
+}
+
+.title h3 {
+    font-size: 30px;
+    padding: 5%;
+    color: aliceblue;
+}
+
+.related-h3 {
+    text-align: center;
+    margin: 90px 0;
+    font-size: 34px;
+}
+
+
+/* END MAIN */
+
+
+/* FOOTER */
+
+footer {
+    padding-top: 40px;
+    height: 200px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer nav {
+    width: 50%;
+}
+
+footer nav ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    color: aliceblue;
+}
+
+.literature {
+    width: 50%;
+}
+
+.literature ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.literature ul li {
+    list-style: none;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+footer p {
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+/* END FOOTER */
+
+
+/* RESPONSIVE */
+
+@media all and (max-width:1200px) and (min-width:992px) {
+    .container {
+        width: 992px;
+    }
+}
+
+@media all and (max-width:991px) and (min-width:576px) {
+    .container {
+        width: 576px;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer nav ul li a {
+        font-size: 20px;
+    }
+    .literature ul li {
+        font-size: 20px;
+    }
+    .product-basic .image {
+        float: none;
+        width: 100%;
+    }
+    .product-basic .title {
+        float: none;
+        width: 100%;
+    }
+    .action {
+        float: none;
+        width: 100%;
+    }
+    .action button {
+        font-size: 23px;
+    }
+    .related-products {
+        height: auto;
+    }
+    .related-product {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media all and (max-width:575px) {
+    .container {
+        width: 98%;
+    }
+    header nav ul li a {
+        font-size: 1em;
+    }
+    footer nav ul li a {
+        font-size: 1em;
+    }
+    .literature ul li {
+        font-size: 1em;
+    }
+    header {
+        height: auto;
+        padding: 20px;
+    }
+    header nav ul li {
+        float: none;
+        display: block;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    header nav ul li a {
+        display: block;
+        width: 100%;
+    }
+    .product-basic .image {
+        float: none;
+        width: 100%;
+    }
+    .product-basic .title {
+        float: none;
+        width: 100%;
+    }
+    .action {
+        float: none;
+        width: 100%;
+    }
+    .action button {
+        font-size: 23px;
+    }
+    .related-products {
+        height: auto;
+    }
+    .related-product {
+        float: none;
+        width: 100%;
+    }
+}
