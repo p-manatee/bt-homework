@@ -42,8 +42,10 @@ $testNiz = [
     "img" =>"..."
     ]
     ];
+// Trenutno je search string hard kod ali posto nije zahtev zadatka bio  da se unosi kroz formu, dovoljno je da se prikaze kako funkcija radi, naravno ovde bi uzeli paremetar kroz formu i radili sve provere
+$searchString = 'PER';
 
-$call = search_users($testNiz,'pera');
+$call = search_users($testNiz,$searchString);
 echo "<pre>";
 print_r($call);
 echo "</pre>";
