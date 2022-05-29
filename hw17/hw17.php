@@ -50,7 +50,4 @@ echo "<pre>";
 print_r($call);
 echo "</pre>";
 
-
-
-
 ?>
