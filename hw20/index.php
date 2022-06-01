@@ -15,6 +15,7 @@ Abstract class Contact {
     public function setEmail($mail){
         $this->email = $mail;
     }
+    protected Abstract function displayMe();
     /**
      * function checks if param txt is contained within a property of an object.Second param is string property that we are checking if it contains the searched param txt
      * @param $txt string
@@ -28,12 +29,8 @@ Abstract class Contact {
             return false;
         }
     }
-    public function __toString(){
-        return "This contact's phone is: ".$this->phone.", and email address is: ".$this->email;
-    }
-    public function displayMe(){
-        echo "This contact's phone is: ".$this->phone.", and email address is: ".$this->email;
-    }
+    
+    
 }
 
 class CustomerContact extends Contact{
@@ -52,7 +49,7 @@ class CustomerContact extends Contact{
         $this->lastName=$lname;
     }
     public function displayMe(){
-        echo "Customer's first name is: ".$this->getFirstName()." and last name is:  ".$this->getLastName()."<br><hr>";
+        echo "Customer's first name is: ".$this->getFirstName()." and last name is:  ".$this->getLastName().", phone number is: ".$this->getPhone().", email : ".$this->getEmail()."<br><hr>";
     }
 }
 
@@ -72,7 +69,7 @@ class BusinessContact extends Contact{
         $this->companyName=$companyName;
     }
     public function displayMe(){
-        echo "Company's address is: ".$this->getAddress()." and name is:  ".$this->getCompanyName()."<br><hr>";
+        echo "Company's address is: ".$this->getAddress()." and name is:  ".$this->getCompanyName().", phone number is: ".$this->getPhone().", email : ".$this->getEmail()."<br><hr>";
     }
 }
 
@@ -86,7 +83,7 @@ class ContactList {
      * @param $newContactEntry
      * @return boolean
      */
-    public function contactsContain($newContactEntry):bool{
+    public function contactsContain(Contact $newContactEntry):bool{
         foreach ($this->contacts as $compare) {
             if($compare->getEmail() == $newContactEntry->getEmail() ){
                 return true;
@@ -158,4 +155,3 @@ $contactList->addContact($businessContact2);
 
 $contactList->listAllContacts();
 
-// print_r($customer1);
