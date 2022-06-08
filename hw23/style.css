@@ -1,0 +1,7 @@
+body .test {
+    background-color: blue;
+}
+
+.show-modal {
+    display: inline-block;
+}

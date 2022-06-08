@@ -154,4 +154,4 @@ $contactList->addContact($businessContact1);
 $contactList->addContact($businessContact2);
 
 $contactList->listAllContacts();
-
+?>

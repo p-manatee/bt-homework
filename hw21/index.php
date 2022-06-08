@@ -27,13 +27,14 @@
 
     
     class DB {
+        private static $dbHost = "localhost";
+        private static $dbName = "homeworks";
+        private static $dbUser = "root";
+        private static $dbPass = "";
         public static function dbConnect(){
-            $dbHost = "localhost";
-            $dbName = "homeworks";
-            $dbUser = "root";
-            $dbPass = "";
-            $dns="mysql:host=".$dbHost.";dbname=".$dbName;
-            $pdo = new PDO($dns,$dbUser,$dbPass);
+            
+            $dns="mysql:host=".self::$dbHost.";dbname=".self::$dbName;
+            $pdo = new PDO($dns,self::$dbUser,self::$dbPass);
             return $pdo;
         }
     }
@@ -56,7 +57,7 @@
             $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
         } 
-        //function that gets all colors
+        //function that gets all colors form database and inserts instances of class colors in array allColors
         public function getColorsFromDb(){
             $this->connectToDb();
             $sqlString = "SELECT * FROM colors WHERE clr_status=1 ORDER BY clr_created_at DESC";
