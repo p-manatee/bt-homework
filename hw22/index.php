@@ -42,10 +42,12 @@ try {
     $user7->insertUser("Jasna","jasna@google.com","1234");
     $user8 = new User();
     $user8->insertUser("Natasa","nata@google.com","1234");
-    $user9 = new User();
+    // ovde je greska jer klasa Users ne postoji. Treba User- catch na linili 55 Trhowable
+    $user9 = new Users();
     $user9->insertUser("Ivana","ika@google.com","1234");
     $user10 = new User();
-    $user10->insertUser("Stefanija","stefi@google.com");
+    // Ovde je greska drugi parametar je null a u bazi za to polje je stavljeno da ne sme null pa ce da baci sql gresku koja je catchovana u liniji 53 kao PDOException
+    $user10->insertUser("Stefanija",NULL,"12345");
     
 } 
 catch( PDOException $Exception ) {
