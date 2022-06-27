@@ -42,7 +42,7 @@ try {
     $user7->insertUser("Jasna","jasna@google.com","1234");
     $user8 = new User();
     $user8->insertUser("Natasa","nata@google.com","1234");
-    // ovde je greska jer klasa Users ne postoji. Treba User- catch na linili 55 Trhowable
+    // ovde je greska jer klasa Users ne postoji. Treba User - catch na linili 55 Trhowable
     $user9 = new Users();
     $user9->insertUser("Ivana","ika@google.com","1234");
     $user10 = new User();

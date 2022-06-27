@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Project shop</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a href="#"><img class="navbar-brand custom-logo" src="img/logo.png"></img>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" class="center">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-navbar">
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-active" href="#">Shop</a>
+                        </li>
+
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="login">
+            <a class="login-link" href="">log in</a>
+            <a href="#">
+                <div class="login-link login-profile">
+                    <p>My profile</p>
+                    <img src="img/blank-profile.png" alt="profile photo">
+                    <div class="both"></div>
+                </div>
+            </a>
+            <a class="login-link" href="#">Logout</a>
+            <div class="both"></div>
+        </div>
+        <a href="#">
+            <div class="cart"><img src="img/cart.jpg" alt="cart-logo"><span>0</span></div>
+        </a>
+    </header>
+    <!-- End of Navigation -->
+    <!-- Main -->
+    <div class="container">
+        <!-- Bread crumbs -->
+        <div class="bread row mt-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- End of Bread Crumbs -->
+        <form class="row mt-5" action="./products-page.php" method="GET">
+            <div class="col-3">
+                <select name="sort-by" class="px-2 w-100 height-40">
+                    <option value="">None</option>
+                    <option value="constGoesHereASC">By price asc</option>
+                    <option value="constGoesHereDESC">By price desc</option>
+                </select>
+            </div>
+
+            <div class="col-7">
+                <input class="px-2 w-100 height-40" type="text" name="search-term">
+            </div>
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary px-2 w-100 height-40">Search</button>
+            </div>
+
+        </form>
+        <div class="row mt-5">
+            <article class="single-product col-4 mb-5">
+                <div class="product card h-100">
+                    <img src="img/testshoe.jpg" class="card-img-top" alt="shoe">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                            Mega Shoe
+                        </h5>
+                        <p class="card-text">Price: <span class="card-text-span">150$</span></p>
+                        <div class="buttons mt-auto align-self-end">
+                            <a href="#" class="btn btn-dark">View</a>
+                            <a href="#" class="btn-danger btn"><i class="bi bi-cart-dash"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+            <article class="single-product col-4 mb-5">
+                <div class="product card h-100">
+                    <img src="img/test2.jpg" class="card-img-top" alt="shoe">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                            Mega Shoe
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eos aperiam voluptatibus blanditiis magni libero ipsum, temporibus impedit odio obcaecati,
+                            commodi ad id. Corporis expedita magnam reprehenderit, adipisci libero exercitationem!</p>
+                        <p class="card-text">Price: <span class="card-text-span">150$</span></p>
+                        <div class="buttons mt-auto align-self-end">
+                            <a href="#" class="btn btn-dark">View</a>
+                            <a href="#" class="btn-danger btn"><i class="bi bi-cart-dash"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="single-product col-4 mb-5">
+                <div class="product card h-100">
+                    <img src="img/test1.jpg" class="card-img-top" alt="shoe">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                            Mega Shoe
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eos aperiam voluptatibus blanditiis magni libero ipsum, temporibus impedit odio obcaecati,
+                            commodi ad id. Corporis expedita magnam reprehenderit, adipisci libero exercitationem!</p>
+                        <p class="card-text">Price: <span class="card-text-span">150$</span></p>
+                        <div class="buttons mt-auto align-self-end">
+                            <a href="#" class="btn btn-dark">View</a>
+                            <a href="#" class="btn-danger btn"><i class="bi bi-cart-dash"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="single-product col-4 mb-5">
+                <div class="product card h-100">
+                    <img src="img/test3.jpg" class="card-img-top" alt="shoe">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                            Mega Shoe
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eos aperiam voluptatibus blanditiis magni libero ipsum, temporibus impedit odio obcaecati,
+                            commodi ad id. Corporis expedita magnam reprehenderit, adipisci libero exercitationem!</p>
+                        <p class="card-text">Price: <span class="card-text-span">150$</span></p>
+                        <div class="buttons mt-auto align-self-end">
+                            <a href="#" class="btn btn-dark">View</a>
+                            <a href="#" class="btn-danger btn"><i class="bi bi-cart-dash"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="single-product col-4 mb-5">
+                <div class="product card h-100">
+                    <img src="img/test4.jpg" class="card-img-top" alt="shoe">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                            Mega Shoe
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eos aperiam voluptatibus blanditiis magni libero ipsum, temporibus impedit odio obcaecati,
+                            commodi ad id. Corporis expedita magnam reprehenderit, adipisci libero exercitationem!</p>
+                        <p class="card-text">Price: <span class="card-text-span">150$</span></p>
+                        <div class="buttons mt-auto align-self-end">
+                            <a href="#" class="btn btn-dark">View</a>
+                            <a href="#" class="btn-danger btn"><i class="bi bi-cart-dash"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Pagination -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End of Pagination -->
+    </div>
+    <!-- End of Main -->
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Login/Register</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="literature">
+            <h3 class="text-center mb-3">This project is powerd by</h3>
+            <ul>
+                <li>PHP</li>
+                <li>Bootstrap</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+        <div class="social">
+            <a class="btn btn-primary" style="background-color: #3b5998;" href="#" role="button"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-primary" style="background-color: #0082ca;" href="#" role="button"><i class="bi bi-linkedin"></i></a>
+            <a class="btn btn-primary" style="background-color: #481449;" href="#" role="button"><i class="bi bi-slack"></i></a>
+            <a class="btn btn-primary" style="background-color: #333333;" href="#" role="button"><i class="bi bi-github"></i></a>
+        </div>
+        <p>&copy; copy right Petar Trajkovic</p>
+    </footer>
+    <!-- End of Footer -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+
+</html>
